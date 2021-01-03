@@ -1,0 +1,15 @@
+services <- tribble(
+  ~activity, ~where, ~comment, ~category, ~when,  
+  'I have been a reviewer for the following journals','','Science Advances','Review Activity','',
+  'I have been a reviewer for the following journals','','New Journal of Physics','Review Activity','',
+  'I have been a reviewer for the following journals','','IEEE Transactions on Automatic Control','Review Activity','',
+  'I have been a reviewer for the following journals','','Chaos Solitons \\& Fractals','Review Activity','',
+  'I have been a reviewer for the following journals','','IEEE Control System Letters','Review Activity','',
+  'I have been a reviewer for the following journals','','Mathematics and Computers in Simulation','Review Activity','',
+  'Organizer','','Organizer of weekly interdisciplinary seminar series hosted at the University of Limerick.','Short Informal Mathematics (SIM) Talks','Sep. 2018 - Present',
+  'Student Chapter','','Held a number of positions including President and Treasurer of the University of Limerick SIAM student chapter.','Society for Industrial and Applied Maths (SIAM)','Oct. 2017 - Present',
+  'Student Chapter','','This involved organization of several events ranging from a national postgraduate conference to a week-long student mathematical modeling research group which involved over 25 students both undergraduate and postgraduate from a range of countries.','Society for Industrial and Applied Maths (SIAM)','Oct. 2017 - Present',
+  'Undergraduate Thesis','','Supervised Sean McBrearty, a final-year mathematics student, on his undergraduate thesis entitled \\textit{ A Large Scale Data Analysis of Player Behaviour over a Season of Fantasy Premier League}.','Supervision','Oct. 2019 - May 2020',
+  'Univerity of Limerick - Departmental Teaching','','Teaching assistant for a range of applied mathematics and statistical modules to both mathematics students as well as those in degrees such as business and engineering including: Calculus 1/2, Applied Business Statistics, Engineering Mathematics 1','Teaching','Oct. 2017 - Present',
+  'Univerity of Limerick - Departmental Teaching','','Have given several lectures throughout my studies to a mixture of both undergraduate and postgraduate students in the following modules: \\textit{Stochastic Differential Equations for Finance} and \\textit{Calculus 1}','Teaching','Oct. 2017 - Present',
+)

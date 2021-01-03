@@ -1,0 +1,12 @@
+awards <- tribble(
+  ~award, ~date, ~from, ~location, ~reason,
+  "Best Presentation Award", 2020, "7th Irish SIAM Student Conference", "Dublin, Ireland", "Awarded best talk for my presentation \\textit{O'Sullivan, Hendry, Davies,...? A complex networks approach to ranking professional Snooker players}.",
+  "SIAM Certificate of Recognition", 2020, "Society for Industrial and Applied Mathematics", "Philadelphia, USA", "Awarded in recognition of outstanding efforts and accomplishments on behalf of the SIAM Chapter at the University of Limerick.",
+  "Best Talk Award", 2019, "Oxford SIAM-IMA Student Conference", "Oxford, UK", "My talk entitled \\textit{Spreading of memes on multiplex networks} based on work undertaken during my PhD was deemed the best at this conference.",
+  "Short Term Scientific Mission Award", 2019, "Mathematics for Industry Network", "Zaragoza, Spain", "\\euro 2,000 grant to fund my research visit to Prof. Yamir Moreno's group at BIFI, University of  Zaragoza.",
+  "COST Action", 2018, "Conference Organiser Support Grant", "Limerick, Ireland", "\\euro 2,800 grant to fund a week-long mathematical modeling workshop with over 25 participants organized during my presidency by the SIAM Student Chapter.",
+  "Regional Winner - Mathematics \\& Physics", 2017, "Undergraduate Awards", "Dublin, Ireland", "Awarded for best undergraduate contribution in Mathematics \\& Physics on the Island of Ireland for my final year thesis \\textit{The Theory of Feedback Based Stock Trading}. This programme received a total of 6,472 submissions from nearly 300 institutions across 47 countries.",
+  "Doctoral Studies Scholarship", 2017, "Science Foundation Ireland", "Limerick, Ireland", "Funding of \\euro 104,000 to undertake my doctoral studies under the title \\textit{Mathematical modeling of social spreading phenomena within complex systems}.",
+  "Science \\& Engineering Summer Research Scholarship Programme", 2017, "UL40", "Limerick, Ireland", "\\euro 2,000 scholarship competitively awarded within the University of Limerick to fund my ten week internship in MACSI researching \\textit{L\\'evy Copulas for Dependent Random Variables}.",
+  "All Ireland Scholarship", 2013, "Undergraduate Awards", "Dublin, Ireland", "\\euro 26,000 scholarship received as a result of me placing in the 99.7th percentile nationwide in my final secondary level exams. Scholarship provided me with funding throughout my undergraduate degree."
+  )

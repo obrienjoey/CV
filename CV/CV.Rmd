@@ -1,0 +1,112 @@
+---
+name: Joseph
+surname: O'Brien
+position: "PhD Student"
+address: "Dept. Mathematics and Statistics, University of Limerick, Co. Limerick, Ireland"
+www: joeyobrien.ie
+email: joseph.obrien@ul.ie
+twitter: obrienj_
+github: obrienjoey
+linkedin: obrienjoey
+headcolor: "333333"
+date: "`r format(Sys.time(), '%B %Y')`"
+output: vitae::awesomecv
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      message = FALSE)
+library(here)
+library(fontawesome)
+library(tidyverse)
+library(vitae)
+
+```
+# \faIcon{university} Education
+```{r}
+source(here('./data/education.R'))
+education %>%
+   detailed_entries(
+    with = inst,
+    what = degree,
+    why = detail,
+    when = glue::glue("{startYear} - {endYear}",.na = ""),
+    where = where
+  )
+```
+# \faIcon*{file} Publications
+**Journal Articles**
+```{r}
+source(here('./data/publications.R'))
+publications %>%
+  filter(status == 'published') %>%
+  mutate(date = as.Date(paste("01", date), format = "%d %m, %Y")) %>%
+  dplyr::arrange(desc(date)) %>%
+  mutate(date = format(date, "%b %Y")) %>%
+   detailed_entries(
+    with = title,
+    when = date,
+    what = author,
+    where = journal,
+    .protect=FALSE
+  )
+```
+**Under Review**
+```{r}
+source(here('./data/publications.R'))
+publications %>%
+  filter(status == 'under review') %>%
+  mutate(date = as.Date(paste("01", date), format = "%d %m, %Y")) %>%
+  dplyr::arrange(desc(date)) %>%
+  mutate(date = format(date, "%b %Y")) %>%
+   detailed_entries(
+    with = title,
+    when = date,
+    what = author,
+    where = journal,
+    .protect=FALSE
+  )
+```
+# \faIcon{trophy} Grants, Fundings, & Awards
+```{r}
+source(here('./data/awards.R'))
+awards %>%
+   detailed_entries(
+    with = award,
+    what = from,
+    why = reason,
+    when = date,
+    where = location,
+    .protect = FALSE
+  )
+```
+# \faIcon{microphone} Presentations
+```{r}
+source(here('./data/presentations.R'))
+presentations %>%
+  mutate(date = as.Date(paste("01", date), format = "%d %m, %Y")) %>%
+  dplyr::arrange(desc(date)) %>%
+  mutate(date = format(date, "%b %Y")) %>%
+  filter(featured == TRUE) %>%
+  brief_entries(
+    what = title,
+    when = date,
+    #where = location,
+    with = event,
+    .protect = FALSE
+  )
+```
+# \faIcon*{pencil} Teaching, Outreach, & Professional Service
+```{r}
+source(here('./data/services.R'))
+services %>%
+   detailed_entries(
+    with = category,
+    when = when,
+    why = comment,
+    where = where,
+    what = activity,
+    .protect = FALSE
+  )
+```
