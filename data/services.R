@@ -5,6 +5,7 @@ services <- tribble(
   'I have been a reviewer for the following journals','','IEEE Transactions on Automatic Control','Review Activity','',
   'I have been a reviewer for the following journals','','Chaos Solitons \\& Fractals','Review Activity','',
   'I have been a reviewer for the following journals','','IEEE Control System Letters','Review Activity','',
+  'I have been a reviewer for the following journals','','Frontiers in Physics','Review Activity','',
   'I have been a reviewer for the following journals','','Mathematics and Computers in Simulation','Review Activity','',
   'Organizer','','Organizer of weekly interdisciplinary seminar series hosted at the University of Limerick.','Short Informal Mathematics (SIM) Talks','Sep. 2018 - Present',
   'Student Chapter','','Held a number of positions including President and Treasurer of the University of Limerick SIAM student chapter.','Society for Industrial and Applied Maths (SIAM)','Oct. 2017 - Present',
